@@ -64,7 +64,7 @@ To run the project, open index.html with your preferred web browser or open it w
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Feel free to check the [issues page](https://github.com/wickathou/es6-awesome-books/issues/).
+Feel free to check the [issues page](https://github.com/wickathou/es6-awesome-book/issues).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
