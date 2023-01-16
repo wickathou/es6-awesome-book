@@ -1,7 +1,7 @@
-import { allBooks } from './modules/classes.js';
-import { add } from './modules/add.js';
-import { remove } from './modules/remove.js';
-import { storedBooksCheck } from './modules/localStorage.js';
+import allBooks from './modules/classes.js';
+import add from './modules/add.js';
+import remove from './modules/remove.js';
+import storedBooksCheck from './modules/localStorage.js';
 
 // DOM elements
 const addButton = document.getElementById('add');

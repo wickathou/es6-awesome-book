@@ -42,4 +42,6 @@ class Books {
   }
 }
 
-export const allBooks = new Books();
+const allBooks = new Books();
+
+export default allBooks

@@ -1,4 +1,4 @@
-export const bookElement = (booksListed, bookData) => {
+const bookElement = (booksListed, bookData) => {
   const bookItem = document.createElement('li');
   bookItem.id = `${bookData._id}`;
   bookItem.classList = 'books';
@@ -16,3 +16,5 @@ export const bookElement = (booksListed, bookData) => {
   bookItem.append(div, bookRemoveButton);
   booksListed.appendChild(bookItem);
 };
+
+export default bookElement

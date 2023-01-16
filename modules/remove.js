@@ -1,4 +1,4 @@
-export const remove = (booksSource, booksListed) => {
+const remove = (booksSource, booksListed) => {
   booksListed.addEventListener('click', ((e) => {
     if (e.target.classList[0] === 'button') {
       booksSource.removeBook(e.target.parentElement.id);
@@ -6,3 +6,5 @@ export const remove = (booksSource, booksListed) => {
     }
   }));
 };
+
+export default remove

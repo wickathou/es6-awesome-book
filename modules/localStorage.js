@@ -1,6 +1,6 @@
-import { bookElement } from "./dom.js";
+import bookElement from "./dom.js";
 
-export const storedBooksCheck = (booksSource, localBooks, booksListed) => {
+const storedBooksCheck = (booksSource, localBooks, booksListed) => {
   if (localBooks?.length > 0) {
     booksSource.id = localBooks[localBooks.length - 1]._id;
     booksSource.books = localBooks;
@@ -9,3 +9,5 @@ export const storedBooksCheck = (booksSource, localBooks, booksListed) => {
     });
   }
 };
+
+export default storedBooksCheck
