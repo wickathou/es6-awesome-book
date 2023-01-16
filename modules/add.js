@@ -12,4 +12,4 @@ const add = (booksSource, addBtn, title, author, booksListed) => {
   }));
 };
 
-export default add
+export default add;

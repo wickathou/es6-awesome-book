@@ -1,22 +1,4 @@
-class Book {
-  constructor(title, author, id) {
-    this._title = title;
-    this._author = author;
-    this._id = id;
-  }
-
-  get title() {
-    return this._title;
-  }
-
-  get author() {
-    return this._author;
-  }
-
-  get id() {
-    return this._id;
-  }
-}
+import Book from "./bookClass.js";
 
 class Books {
   constructor() {
@@ -25,18 +7,18 @@ class Books {
   }
 
   addBook = (title, author) => {
-    this.id++;
+    this.id += 1;
     const book = new Book(title, author, this.id);
     this.books.push(book);
     localStorage.setItem('local-books', JSON.stringify(this.books));
   }
 
   removeBook = (idd) => {
-    this.books = this.books.filter((x) => x._id !== parseInt(idd));
+    this.books = this.books.filter((book) => book.id !== parseInt(idd,10));
     if (this.books.length === 0) {
       this.id = 0;
     } else {
-      this.id = this.books[this.books.length - 1]._id;
+      this.id = this.books[this.books.length - 1].id;
     }
     localStorage.setItem('local-books', JSON.stringify(this.books));
   }
@@ -44,4 +26,4 @@ class Books {
 
 const allBooks = new Books();
 
-export default allBooks
+export default allBooks;

@@ -17,4 +17,4 @@ const bookElement = (booksListed, bookData) => {
   booksListed.appendChild(bookItem);
 };
 
-export default bookElement
+export default bookElement;

@@ -7,4 +7,4 @@ const remove = (booksSource, booksListed) => {
   }));
 };
 
-export default remove
+export default remove;

@@ -1,4 +1,4 @@
-import bookElement from "./dom.js";
+import bookElement from './dom.js';
 
 const storedBooksCheck = (booksSource, localBooks, booksListed) => {
   if (localBooks?.length > 0) {
@@ -10,4 +10,4 @@ const storedBooksCheck = (booksSource, localBooks, booksListed) => {
   }
 };
 
-export default storedBooksCheck
+export default storedBooksCheck;
