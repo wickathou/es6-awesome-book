@@ -1,13 +1,15 @@
 const bookElement = (booksListed, bookData) => {
+  console.log(bookData);
+  console.log(bookData.constructor);
   const bookItem = document.createElement('li');
-  bookItem.id = `${bookData._id}`;
+  bookItem.id = `${bookData.id}`;
   bookItem.classList = 'books';
   const div = document.createElement('div');
   div.classList = 'books-info-div';
   const bookItemTitle = document.createElement('h2');
-  bookItemTitle.textContent = `"${bookData._title}" by`;
+  bookItemTitle.textContent = `"${bookData.title}" by`;
   const bookItemAuthor = document.createElement('h3');
-  bookItemAuthor.textContent = bookData._author;
+  bookItemAuthor.textContent = bookData.author;
   bookItemAuthor.classList = 'book-author';
   const bookRemoveButton = document.createElement('button');
   bookRemoveButton.textContent = 'Remove';

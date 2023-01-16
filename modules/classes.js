@@ -1,4 +1,4 @@
-import Book from "./bookClass.js";
+import Book from './bookClass.js';
 
 class Books {
   constructor() {
@@ -14,7 +14,7 @@ class Books {
   }
 
   removeBook = (idd) => {
-    this.books = this.books.filter((book) => book.id !== parseInt(idd,10));
+    this.books = this.books.filter((book) => book.id !== parseInt(idd, 10));
     if (this.books.length === 0) {
       this.id = 0;
     } else {

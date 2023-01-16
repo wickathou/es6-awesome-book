@@ -5,7 +5,7 @@ const add = (booksSource, addBtn, title, author, booksListed) => {
     e.preventDefault();
     if (author.value && title.value) {
       booksSource.addBook(title.value, author.value);
-      bookElement(booksListed, { _title: title.value, _author: author.value, _id: booksSource.id });
+      bookElement(booksListed, { title: title.value, author: author.value, id: booksSource.id });
       author.value = '';
       title.value = '';
     }
