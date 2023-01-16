@@ -1,6 +1,4 @@
 const bookElement = (booksListed, bookData) => {
-  console.log(bookData);
-  console.log(bookData.constructor);
   const bookItem = document.createElement('li');
   bookItem.id = `${bookData.id}`;
   bookItem.classList = 'books';
