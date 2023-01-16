@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Poppins&display=swap");
+
+* {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Utilities */
+
+.width-80 {
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.border {
+  border: 2px black solid;
+}
+
+.p-1 {
+  padding: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Specific CSS selectors */
+
+html {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  width: 100%;
+}
+
+nav h1 {
+  padding-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+}
+
+nav .Add-new {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+main {
+  margin: 8vh auto;
+}
+
+/* section-1 */
+
+.books-stored {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.books-stored-appear {
+  display: flex;
+}
+
+.book-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid black;
+  list-style: none;
+  width: 100%;
+}
+
+/* section-2 */
+
+.books-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.books-add-disappear {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  width: 30vh;
+}
+
+#author {
+  margin: 10px 0 10px 0;
+  width: 30vh;
+}
+
+#add {
+  align-self: flex-end;
+}
+
+/* js classes */
+
+.books {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.books-info-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-author {
+  margin: 10px;
+}
+
+.button {
+  margin-right: 10px;
+}
+
+/* Contact section  */
+
+.contact-form-disappear {
+  display: none;
+}
