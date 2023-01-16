@@ -27,7 +27,7 @@ HTML | JS | GIT
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://wickathou.github.io/es6-awesome-books)
+- [Live Demo Link](https://wickathou.github.io/es6-awesome-book/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -64,7 +64,7 @@ To run the project, open index.html with your preferred web browser or open it w
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Feel free to check the [issues page](https://github.com/wickathou/es6-awesome-books/issues).
+Feel free to check the [issues page](https://github.com/wickathou/es6-awesome-books/issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
