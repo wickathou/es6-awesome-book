@@ -1,4 +1,4 @@
-export function bookElement(booksListed, bookData) {
+export const bookElement = (booksListed, bookData) => {
   const bookItem = document.createElement('li');
   bookItem.id = `${bookData._id}`;
   bookItem.classList = 'books';

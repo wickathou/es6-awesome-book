@@ -25,14 +25,14 @@ class Books {
     this.books = [];
   }
 
-  addBook(title, author) {
+  addBook = (title, author) => {
     id++;
     const book = new Book(title, author, id);
     this.books.push(book);
     localStorage.setItem('local-books', JSON.stringify(this.books));
   }
 
-  removeBook(idd) {
+  removeBook = (idd) => {
     this.books = this.books.filter((x) => x._id !== parseInt(idd));
     if (this.books.length === 0) {
       id = 0;
