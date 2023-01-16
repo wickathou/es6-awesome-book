@@ -1,9 +1,11 @@
-export const storedBooksCheck = (localBooks) => {
+import { bookElement } from "./dom.js";
+
+export const storedBooksCheck = (booksSource, localBooks, booksListed) => {
   if (localBooks?.length > 0) {
-    id = localBooks[localBooks.length - 1]._id;
-    allBooks.books = localBooks;
-    allBooks.books.forEach((x) => {
-      bookElement(x);
+    booksSource.id = localBooks[localBooks.length - 1]._id;
+    booksSource.books = localBooks;
+    booksSource.books.forEach((book) => {
+      bookElement(booksListed, book);
     });
   }
-}
+};

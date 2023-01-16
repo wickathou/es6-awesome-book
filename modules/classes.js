@@ -1,5 +1,3 @@
-let id = 0;
-
 class Book {
   constructor(title, author, id) {
     this._title = title;
@@ -23,11 +21,12 @@ class Book {
 class Books {
   constructor() {
     this.books = [];
+    this.id = 0;
   }
 
   addBook = (title, author) => {
-    id++;
-    const book = new Book(title, author, id);
+    this.id++;
+    const book = new Book(title, author, this.id);
     this.books.push(book);
     localStorage.setItem('local-books', JSON.stringify(this.books));
   }
@@ -35,9 +34,9 @@ class Books {
   removeBook = (idd) => {
     this.books = this.books.filter((x) => x._id !== parseInt(idd));
     if (this.books.length === 0) {
-      id = 0;
+      this.id = 0;
     } else {
-      id = this.books[this.books.length - 1]._id;
+      this.id = this.books[this.books.length - 1]._id;
     }
     localStorage.setItem('local-books', JSON.stringify(this.books));
   }

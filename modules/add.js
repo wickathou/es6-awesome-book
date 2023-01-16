@@ -1,6 +1,6 @@
-import { bookElement } from "./dom.js";
+import { bookElement } from './dom.js';
 
-export const add = (booksSource,addBtn,title,author, booksListed) => {
+export const add = (booksSource, addBtn, title, author, booksListed) => {
   addBtn.addEventListener(('click'), ((e) => {
     e.preventDefault();
     if (author.value && title.value) {
@@ -10,4 +10,4 @@ export const add = (booksSource,addBtn,title,author, booksListed) => {
       title.value = '';
     }
   }));
-}
+};

@@ -5,4 +5,4 @@ export const remove = (booksSource, booksListed) => {
       e.target.parentElement.remove();
     }
   }));
-}
+};

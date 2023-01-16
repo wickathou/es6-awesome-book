@@ -15,4 +15,4 @@ export const bookElement = (booksListed, bookData) => {
   div.append(bookItemTitle, bookItemAuthor);
   bookItem.append(div, bookRemoveButton);
   booksListed.appendChild(bookItem);
-}
+};
