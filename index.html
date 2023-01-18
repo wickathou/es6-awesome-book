@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>ES6 - Awesome Books</title>
+</head>
+<body>
+  <header class="flex flex-column width-80 align-items-center justify-content-center">
+    <nav class="nav">
+      <h1>Awesome Books</h1>
+      <div class="">
+        <a href="#" >List</a>
+        <a href="#" class="Add-new">Add new</a>
+        <a href="#" >Contact</a>
+      </div>
+    </nav>
+    <div class="align-self-end" id="current-time"></div>
+  </header>
+  <main>
+    <section class="books-stored">
+      <header>
+        <h1>All awesome books</h1>
+      </header>
+      <ul class="book-list-item" id="book-list">
+      </ul>
+    </section>
+    <section class="books-add">
+      <h1>Add a new book</h1>
+      <div>
+        <form action="" >
+          <input type="text" name="" id="title" placeholder="Book title">
+          <input type="text" name="" id="author" placeholder="Book author">
+          <button type="button" class="add" id="add">Add</button>
+        </form>
+      </div>
+    </section>
+    <section class="contact-form-disappear contact-form">
+      <h2>Contact information</h2>
+      <p>Do you have questions or you just want to say "Hello"?<br>
+      You can reach out to us!</p>
+      <ul>
+        <li>
+          <p>Our email: team6899@mcv.org</p>
+        </li>
+        <li>
+          <p>Our phone: 0514789632</p>
+        </li>
+        <li>
+          <p>Our address: Fictional St. 12, 07890, Random Town, Acountry</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="width-80 border p-1 bold">
+    <span>Copyright - Team 6899 - 2022</span>
+  </footer>
+  <script src="./modules/navigation.js"></script>
+  <script type="module" src="./modules/timestamp.js"></script>
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
